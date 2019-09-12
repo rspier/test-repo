@@ -1,0 +1,8 @@
+name: formatter
+# This workflow is triggered on pushes to the repository.
+on: [push]
+
+jobs:
+  build:
+    - name: Black Code Formatter
+      uses: lgeiger/black-action@v1.0.1
