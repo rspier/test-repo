@@ -12,8 +12,8 @@ jobs:
     - name: Create Pull Request
       uses: peter-evans/create-pull-request@v1.1.1
       env:
-        GITHUB_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
-        REPO_ACCESS_TOKEN: ${{ secrets.REPO_ACCESS_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        REPO_ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         PULL_REQUEST_BRANCH: autopep8-patches
         COMMIT_MESSAGE: autopep8 action fixes
         PULL_REQUEST_TITLE: Fixes by autopep8 action
