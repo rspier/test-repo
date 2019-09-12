@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+#bar
  # foo
 
 a =           1
