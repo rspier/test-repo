@@ -1,0 +1,16 @@
+name: formatter
+on: [push]
+
+jobs:
+  build:
+    # Job name is Greeting
+    name: manual
+    # This job runs on Linux
+    runs-on: ubuntu-latest
+    steps:
+       - name: Create File
+         uses: finnp/create-file-action@1.0.0
+         env:
+           FILE_NAME: "foo"
+           FILE_DATA: "bar"
+
