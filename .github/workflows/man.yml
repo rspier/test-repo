@@ -1,5 +1,5 @@
 name: formatter
-#on: [push]
+on: [push]
 
 jobs:
   build:
